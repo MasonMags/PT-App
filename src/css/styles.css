@@ -1,0 +1,173 @@
+.doc {
+    background-color: #4b554a;
+    color: white;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: monospace;
+    color: var(--color);
+    font-size: 30px;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.nav-overwrite {
+    border-bottom: 5px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: white  !important
+}
+
+.content-box {
+    font-size: 30;
+    margin-top: 15px;
+    line-height: 200%
+}
+/* 
+.about-container {
+    display: flex
+} */
+
+.about-content {
+   max-width: 1080px;
+   margin: 70px 20%;
+   float: none;
+   text-align: center
+}
+
+.nav-link {
+    color: #b6711a !important;
+}
+
+.active {
+    color: #4b554a !important
+}
+
+.work-img {
+    max-width: 300px;
+    height: auto;
+    margin: 40px 10% 40px 10%;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.46);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.work-img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.flex-parent {
+    display: flex
+}
+
+.flex-child {
+    flex: 1;
+    justify-content: center;
+}
+
+.work-caption {
+    margin-top: 40px !important;
+    margin-right: 10% !important;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.work-link-list {
+    color:#64ffda
+}
+
+.contact {
+    margin-left: 50px;
+    margin-right: 50px
+}
+
+.btn-overwrite {
+    margin-top: 20px;
+    background-color: #64ffda !important;
+    border-color: #64ffda !important;
+    color: #233554 !important;
+}
+
+.errorMessage{
+    color:#64ffda !important;
+}
+
+.avatar{
+    height: auto;  
+    max-width: 300px; 
+    max-height: 300px;
+    border-radius: 60%;
+    margin-bottom: 20px;
+}
+
+.resume-content{
+    margin-top: 70px !important;
+    text-align: center;
+}
+
+.resume-overwrite {
+    color:#64ffda
+}
+
+.footer{
+    background-color:#233554 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 20px;
+    max-width: 25px;
+}
+
+.tech{
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.skills-list{
+    text-align: center;
+    margin-top: 10px;
+    list-style-position: inside;
+    margin-right: 10px
+}
+
+/* media queries */
+@media (max-width: 450px) {
+/* About */
+    .avatar {
+        margin-right: 5px;
+        margin-left: 5px
+    }
+    .about-content {
+        margin-right: 5px;
+        margin-left: 5px
+    }
+
+/* Portfolio */
+    .flex-child {
+        margin-top: 5px !important;
+        margin-right: 0px;
+        margin-left: 10px;
+        text-align: right;
+    }
+
+    .work-img {
+        margin-left: 0px
+    }
+
+    .flex-parent {
+        border-bottom: #64ffda;
+        border-bottom-style: dashed;
+    }
+}
